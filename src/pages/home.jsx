@@ -20,7 +20,7 @@ import { duration } from "@mui/material";
 
 export function Home() {
   useEffect(() => {
-    AOS.init({duration: 1000});
+    AOS.init({duration: 100});
   }, []);
   const [show, setShow] = useState(false);
   const {text} = contactData;
