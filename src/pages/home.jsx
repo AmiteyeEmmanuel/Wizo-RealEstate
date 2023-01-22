@@ -20,7 +20,7 @@ import { duration } from "@mui/material";
 
 export function Home() {
   useEffect(() => {
-    AOS.init({duration: 100});
+    AOS.init({duration: 1000});
   }, []);
   const [show, setShow] = useState(false);
   const {text} = contactData;
@@ -215,7 +215,7 @@ export function Home() {
                 >
                 CEO TALK
              </Typography>
-          <div className="mt-8 w-4/5 grid grid-cols-1 gap-8 mx-auto md:grid-cols-1 xl:grid-cols-2 sm:md:grid-cols-1" data-aos="fade-up">
+          <div className="mt-8 w-4/5 grid grid-cols-1 gap-8 mx-auto md:grid-cols-1 xl:grid-cols-2 sm:md:grid-cols-1">
           {teamData.map(({ name, position, description }) => (
               <TeamCard
                 key={name}
@@ -242,7 +242,7 @@ export function Home() {
             >
             REVIEWS
         </Typography>
-          <div className="mx-auto mt-20 mb-10 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-1 lg:grid-cols-3" data-aos="fade-in">
+          <div className="mx-auto mt-20 mb-10 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-1 lg:grid-cols-3">
             {contactData.map(({ title, description }) => (
               <Card
                 key={title}
@@ -269,7 +269,7 @@ export function Home() {
           </div>
           <div>
             {
-              show ?   <div className="mx-auto mt-2 mb-5 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-1  lg:grid-cols-3">
+              show ?   <div className="mx-auto mt-2 mb-5 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-1  lg:grid-cols-3" data-aos="fade-in">
               {contactData1.map(({ title, description }) => (
                 <Card
                   key={title}
