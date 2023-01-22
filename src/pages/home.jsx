@@ -269,7 +269,7 @@ export function Home() {
           </div>
           <div>
             {
-              show ?   <div className="mx-auto mt-2 mb-5 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-1  lg:grid-cols-3" data-aos="fade-in">
+              show ?   <div className="mx-auto mt-2 mb-5 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-1  lg:grid-cols-3">
               {contactData1.map(({ title, description }) => (
                 <Card
                   key={title}
@@ -310,7 +310,7 @@ export function Home() {
             Coaching Tips
         </Typography>
 
-          <div className="mx-auto mt-1 mb-20  grid w-full grid-cols-1 gap-16 md:grid-cols-1 md:w-full lg:1/2 xl:w-1/2 lg:grid-cols-1" data-aos="fade-in">
+          <div className="mx-auto mt-1 mb-20  grid w-full grid-cols-1 gap-16 md:grid-cols-1 md:w-full lg:1/2 xl:w-1/2 lg:grid-cols-1">
             {coaching.map(({description }) => (
               <Card
                 shadow={false}
