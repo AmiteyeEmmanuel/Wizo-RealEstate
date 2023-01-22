@@ -10,6 +10,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { SimpleFooter } from "@/widgets/layout";
+import Hide from './Password';
 
 export function SignIn() {
   return (
@@ -32,13 +33,8 @@ export function SignIn() {
           </CardHeader>
           <CardBody className="flex flex-col gap-2 mt-4">
             <label className="mb-0"> Email </label>
-            <Input type="email" label="Email" size="lg" color="blue" />
-            <Input
-              type="password"
-              label="Password"
-              size="lg"
-              color="blue" 
-            />
+            <Input type="email" className="w-full h-full" label="Email" size="lg" color="blue" />
+            <Hide/>
             <div className="-ml-2.5">
               <Checkbox label="Remember Me" />
             </div>

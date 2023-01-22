@@ -13,6 +13,8 @@ import {
 import { SimpleFooter } from "@/widgets/layout";
 import { StyledEngineProvider } from '@mui/material/styles';
 import Sign from './signup';
+import Hide from './Password';
+import Confirm from './Password1'
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
@@ -27,7 +29,7 @@ export function SignUp() {
         className="absolute inset-0 z-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 z-0 h-full w-full bg-black/50" />
-      <div className="container mx-auto mt-4 mb-2">
+      <div className="container mx-auto mt-4  mb-4">
         <Card className="absolute my-5  top-2/4 left-2/4 w-full max-w-[30rem] -translate-y-2/4 -translate-x-2/4">
           <CardHeader
             variant="gradient"
@@ -71,21 +73,9 @@ export function SignUp() {
             </div>
      
           
-            <div className="flex gap-6">
-            <Input
-              type="password"
-              label="Password"
-              size="lg"
-              color="blue"
-              className="inline-block h-3.5 w-3.5"
-            />
-              <Input
-              type="password"
-              label="Confirm Password"
-              size="lg"
-              color="blue"
-              className="inline-block h-3.5 w-3.5"
-            />
+            <div className="flex gap-2">
+              <Hide/>
+              <Confirm />
             </div>
           </CardBody>
           <CardFooter className="pt-0">
