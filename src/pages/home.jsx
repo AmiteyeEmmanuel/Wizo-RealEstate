@@ -175,7 +175,7 @@ export function Home() {
                     className="h-full w-full"
                   />
             </div>
-            <div className="mx-auto -mt-8 w-full px-4 md:w-1/2 border-2 md:relative md:right-6 md:py-9  xl:relative xl:right-12 xl:py-16 border-gray-300  hover:bg-[#5b0e0e] hover:text-cyan-50 "
+            <div className="mx-auto -mt-8 w-full px-4 md:w-1/2 border-2 md:relative md:right-6 md:py-9  xl:relative xl:right-12 xl:py-12 border-gray-300  hover:bg-[#5b0e0e] hover:text-cyan-50 "
              data-aos="fade-in"
             >
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
